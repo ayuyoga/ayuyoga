@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300;400&family=Oswald:wght@300;600&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    color: #4b5054;
+}
+
+.clear-both {
+    clear: both;
+}
+
+h1, h2 {
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 4px;
+    color: #4b5054;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 30px 0;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+/* Header and logo */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 0 -20px 30px #000;
+}
+
+#logo {
+    float: left;
+    font-size: 200%;
+    margin: 0 0 0 20px;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 3px;
+}
+
+#menu, #logo {
+    line-height: 75px;
+}
+
+#menu ul {
+    margin: 0;
+    float: right;
+}
+
+#menu li {
+    float: left;
+    list-style-type: none;
+    margin-right: 15px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px;
+}
+
+#menu a:hover {
+    background-color: #e1eae7;
+    border-radius: 5px;
+}
+
+.spacing-under-nav {
+    position: relative;
+    top: -75px;
+}
+
+/* Dropdown Nav */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    z-index: 1;
+    box-shadow: 0 0 5px #808080;
+}
+
+.dropdown-content a {
+    display: block;
+    line-height: 30px;
+}
+
+/* hero-image and cover text*/
+
+#hero-outer {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 75px;
+}
+
+#hero-image {
+    width: 100%;
+    height: 600px;
+    background: url(../images/heroimage_s.webp) no-repeat center center;
+    background-size: cover;
+}
+
+#cover-text {
+    position: absolute;
+    right: 50px;
+    bottom: 300px;
+    width: 400px;
+    height: auto;
+}
+
+#cover-text h2 {
+    color: white;
+    background-color: rgba(44, 65, 56, 0.5); 
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    padding: 40px 10px; 
+    margin: 0;
+}
+
+/* About Section */
+
+#about-outer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#about-text {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+#pose-links {
+    margin: 50px 150px;
+}
+
+#pose-links div {
+    width: 25%;
+    float: left;
+}
+
+.yoga-silhouettes {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#pose-links h3 {
+    text-align: center;
+    font-size: 110%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#pose-links h3 a {
+    color: inherit;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#pose-links h3 a:hover {
+    background-color: #e1eae7;
+    border-radius: 5px;
+}
+
+/* yoga poses section */
+
+.pose-content-wrapper {
+    max-width: 1200px; 
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.green-background {
+    background-color: #e1eae7;
+}
+
+#poses-header {
+    text-align: center;
+}
+
+.column {
+    width: 50%;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.content-image {
+    text-align: center;
+    padding: 50px;
+}
+
+.content-text-right {
+    text-align: justify;
+    padding: 50px;
+    line-height: 25px;
+}
+
+.content-text-left {
+    text-align: justify;
+    padding: 50px;
+    line-height: 25px;
+}
+
+.content-text-left h3, .content-text-right h3 {
+    margin-top: 0;
+}
+
+.content-text-right h3 {
+    text-align: left;
+}
+
+.content-text-left h3 {
+    text-align: right;
+}
+.content-text-left li, .content-text-right li {
+    padding: 0 0 15px 0;
+}
+
+.content-image img {
+    height: 450px;
+    width: 450px;
+}
+
+/* Maps Section */
+
+#map-outer {
+    padding: 40px 0 60px 0;
+    background-color: #142a2b;
+}
+
+#map-outer h2 {
+    color: white;
+    text-align: center;
+}
+
+#map-inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Form Section */
+
+#form-outer {
+    width: 100%;
+    position: relative;
+}
+
+video {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#contribute-form {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    margin: auto;
+    background-color: #142a2b;
+    max-width: 400px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.text-input {
+    width: 90%;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+}
+
+textarea {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 5px 0 0 0;
+    width: 90%;
+    height: 100px;
+}
+
+#checkbox {
+    border: 1px solid white;
+    font-size: 14px;  
+}
+
+.contribute-button {
+    padding: 5px 20px;
+    background-color: white;
+    font-size: 100%;
+    text-align: center;
+    border-radius: 4px;
+    color: #4b5054;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.contribute-button:hover {
+    background-color: #e1eae7;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.social-networks {
+    text-align: center;
+    padding: 0;
+    margin: 40px 0;
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    padding: 0 30px;
+    color: #4b5054;
+}
+
+.social-networks i:hover {
+    color: #142a2b;
+}
+
+/* Media Queries */
+
+/* For small screens/laptops size from 1024px wide and down */
+@media screen and (max-width: 1024px) {
+    
+    #menu {
+        font-size: 100%;
+    }
+
+    #menu ul, #menu li {
+        padding: 0;
+        margin: 0;
+    }
+
+    #cover-text h2 {
+        font-size: 160%;
+    }
+
+    #cover-text {
+        width: 300px;
+    }
+    
+    #about-outer {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #about-text {
+        width: 100%;
+    }
+
+    #pose-links {
+        margin: 0
+    }
+
+    #pose-links div {
+        width: 50%;
+        padding: 0;
+    }
+
+    #pose-links h4 {
+        padding-top: 0
+    }
+        
+    .column {
+        width: 100%;
+    }
+
+    .content-image {
+        padding: 50px 0 0 0;
+    }
+    
+    .content-image img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .content-text-left, .content-text-right {
+        padding: 0;
+        width: 70%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .column h3 {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* For iPad/tablet sizes from 768px wide and down */
+@media screen and (max-width: 768px) {
+
+    #logo {
+        margin-bottom: 0;
+        margin-top: 10px;
+        padding-left: 5px;
+    }
+    
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size: 100%;
+    }
+
+    #menu, #logo {
+        line-height: 40px;
+    }
+
+    #menu ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #menu li {
+        float: left;
+        margin-right: 0px;
+    }
+    
+    .spacing-under-nav {
+        top: -80px;
+    }
+    
+    #cover-text h2 {
+        font-size: 140%;
+    }
+    
+    #cover-text {
+        padding: 10px;
+        height: auto;
+        left: 0;
+        right: 0;
+        bottom: 5%;
+        margin: auto;
+    }
+    
+    #about-text h2 {
+        line-height: 40px;
+    }
+    
+    .yoga-silhouettes {
+        height: 150px;
+        width: 150px;
+    }
+
+    #contribute-form {
+        max-width: 300px;
+    }
+}
+
+/* For mobile device sizes from 480px wide and down */
+@media screen and (max-width: 480px) {
+
+    #menu {
+        font-size: 65%;
+        font-weight: 600;
+    }
+
+    #logo {
+        font-size: 100%;
+    }
+
+    #logo, #menu {
+        margin-left: 8px;
+        line-height: 30px;
+    }
+
+    #menu a {
+        padding: 6px;
+    }
+
+    #cover-text {
+        left: 0;
+        right: 0;
+        bottom: 5%;
+        margin: auto;
+    } 
+
+    #pose-links div {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    .content-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .social-networks i {
+        font-size: 140%;
+        padding: 0 20px;
+    }
+}
+
+/* For mobile device sizes from 320px wide and down */
+@media screen and (max-width: 320px) {
+    
+    #menu {
+        font-size: 55%;
+    }
+
+    #menu a {
+        padding: 4px;
+    }
+}
